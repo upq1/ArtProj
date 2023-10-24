@@ -5,14 +5,14 @@ html, body {
     overflow: hidden;
 }
 
-#image1 {
+#imageContainer {
     position: relative;
     height: 100vh;
     /* background: rgb(34,193,195); */
     /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(106,191,145,1) 33%, rgba(148,190,117,1) 52%, rgba(192,189,87,1) 72%, rgba(253,187,45,1) 100%); */
 }
 
-#image1 img {
+#imageContainer img {
     position: absolute;
     top: 50%;
     left: 50%;

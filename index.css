@@ -1,25 +1,121 @@
+Copy
+/* Default styles */
 html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#imageContainer > * {
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+#imageContainer img {
+  height: auto;
+  width: auto;
+  max-height: calc(100vh - 40px);
+  object-fit: contain;
+}
+
+#imageContainer audio {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Media queries for horizontal orientation */
+@media screen and (orientation: landscape) {
+  #imageContainer {
+    flex-direction: row;
+    overflow: auto;
+  }
+
+  #imageContainer > * {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  #imageContainer img {
+    max-height: 100%;
+    max-width: calc(50% - 10px);
+  }
+
+  #imageContainer audio {
+    max-width: calc(50% - 10px);
+  }
+}
+
+/* Media queries for vertical orientation */
+@media screen and (orientation: portrait) {
+  #imageContainer {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  #imageContainer > * {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
-}
-
-#image1 {
-    position: relative;
+  }
+  
+  #imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 100vh;
-    /* background: rgb(34,193,195); */
-    /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(106,191,145,1) 33%, rgba(148,190,117,1) 52%, rgba(192,189,87,1) 72%, rgba(253,187,45,1) 100%); */
-}
-
-#image1 img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  
+  #imageContainer > * {
+    margin-bottom: 20px;
     max-width: 100%;
-    max-height: 100%;
+  }
+  
+  #imageContainer img {
     height: auto;
     width: auto;
-    
-}
+    max-height: calc(100vh - 40px);
+    object-fit: contain;
+  }
+  
+  #imageContainer audio {
+    width: 100%;
+    max-width: 100%;
+  } */

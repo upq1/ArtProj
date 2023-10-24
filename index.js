@@ -1,4 +1,4 @@
-const imgContainer = document.getElementById("image1")
+const imgContainer = document.getElementById("imageContainer")
 
 
 let hue = 0;    
